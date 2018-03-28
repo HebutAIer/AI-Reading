@@ -34,7 +34,7 @@
 >2. will match or exceed human performance when trained with a dataset containing at least 10 millon labeled esamples
 ### 1.2.3 Increasing Model Sizes
 1. Unless new technologies enable faster scaling, artificial neural networks will not have the same number of neurons as the human brain until at least the 2050s.
-### 不认识的单词
+### New Word
 1. desire 
 2. conveive
 3. routine
@@ -50,5 +50,3 @@
 13. rebrand
 14. flaw
 15. vaxed and vaned
-### 第一节  
-aaa  
