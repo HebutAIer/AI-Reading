@@ -49,4 +49,4 @@
 12. viable
 13. rebrand
 14. flaw
-15. vaxed and vaned
+15. waxed and waned
