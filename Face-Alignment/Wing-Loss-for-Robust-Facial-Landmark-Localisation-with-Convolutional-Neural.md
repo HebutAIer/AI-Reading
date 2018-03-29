@@ -1,3 +1,4 @@
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 # Wing Loss for Robust Facial Landmark Localisation with Convolutional Neural Networks
 ## Contributions
 1. Compare and analyse different loss functions including L2, L1 and smooth L1.
@@ -28,3 +29,4 @@ For the training of a CNN-based localisation model, more attention shoule be pai
     >3. Cov/MaxPool/Relu $ \times 5$  
     >4. Fc $ \times 2$
 ### 4. Wing loss
+1. 
