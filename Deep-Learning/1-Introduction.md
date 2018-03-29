@@ -29,7 +29,7 @@
 >1. Neuroscience has given us a reason to hope that a single deep learning algorithm can solve many different tasks. (Much of the mammalian brain might use a single algorithm to solve most of the different tasks that the brain solves.)
 ### 1.2.2 Increasing Dataset Sizes
 1. The amount of skill required reduces as the amount of training data increases.
-2. Af rough rule of thumb is that a supervised deep learning algorithm: 
+2. A rough rule of thumb is that a supervised deep learning algorithm: 
 >1. will generally achieve acceptable performance with around 5000 labeled examples per category.
 >2. will match or exceed human performance when trained with a dataset containing at least 10 millon labeled esamples
 ### 1.2.3 Increasing Model Sizes
