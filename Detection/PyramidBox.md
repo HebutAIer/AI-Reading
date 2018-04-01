@@ -32,14 +32,14 @@
         \begin{cases}
         1, if\ iou\left(anchor_{ij}\cdot s_i/s_{pa}^{k},region_{target}> threshold\right)\\
         0, otherwise
-        \end{cases}$ 
-        2. $anchor_{ij}$: the j-th anchor at the i-th feature layer with stride size $s_i$
+        \end{cases}$
+        2. $anchor_{ij}$: the j-th anchor at the i-th feature layer with stride size $s_i$. 
         3. $s_{pa}$ is the stride of pyramid anchors, default value is 2
-        4. $anchor_{ij}\cdot s_i$: corresponding region in the original image of $anchor_{ij}$
-        5. $anchor_{ij}\cdot s_i/s_{pa}^{k}$: corresponding down-sampled region by stride $s_{pa}^{k}$
-        6. default value is 0.35
+        4. $anchor_{ij}\cdot s_i$: corresponding region in the original image of $anchor_{ij}$. 
+        5. $anchor_{ij}\cdot s_i/s_{pa}^{k}$: corresponding down-sampled region by stride $s_{pa}^{k}$. 
+        6. default value is 0.35. 
         7. $label_0, label_1, label_2$ are labels of face, head and body
-        8. In prediction process, only face branch is used.
+        8. In prediction process, only face branch is used. 
 5. PyramidBox loss layers
 6. Train dataset
     >1. WIDER FACE Training set
