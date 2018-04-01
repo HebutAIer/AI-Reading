@@ -1,4 +1,3 @@
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 # Wing Loss for Robust Facial Landmark Localisation with Convolutional Neural Networks
 ## Contributions
 1. Compare and analyse different loss functions including L2, L1 and smooth L1.
@@ -29,4 +28,24 @@ For the training of a CNN-based localisation model, more attention shoule be pai
     >3. Cov/MaxPool/Relu $ \times 5$  
     >4. Fc $ \times 2$
 ### 4. Wing loss
-1. 
+1. Analysis of different loss functions
+    >1. $ L1\left(x\right)=|x| $
+    >2. $ smooth_{L1}(n)= 
+    \begin{cases} 
+    \frac{1}{2}x^2,  & |x|<1\\ 
+    |x|-\frac{1}{2}, & otherwise
+    \end{cases} $
+    >3. $ L2\left(x\right)=\frac{1}{2}x^2$
+    >4. $wing\left(x\right)=
+    \begin{cases}
+    w ln\left(1+|x|/\epsilon\right), & |x|<w\\
+    |x|-C, & otherwise
+    \end{cases}
+    $
+    >>1. non-negative w sets the range of the nonlinear part to (-w, w).
+    >>2. $\epsilon$ limits the curvature of the nonlinear region, and should not be set very small, to prevent gradient exploding.
+    >>3. $C=w-w ln\left(1+w/\epsilon\right)$
+    >>4. $w=10, \epsilon=2$ in the original paper
+2. All loss functions perform well for large errors, so training of a neural network should pay more attention to the samples with small or medium range errors.
+### 5. Pose-based data balancing
+1. Resampling on the training set, to make the distribution is uniform on the PCA subspace
