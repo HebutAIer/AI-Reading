@@ -42,10 +42,10 @@ For the training of a CNN-based localisation model, more attention shoule be pai
     |x|-C, & otherwise
     \end{cases}
     $
-    >>1. non-negative w sets the range of the nonlinear part to (-w, w).
-    >>2. $\epsilon$ limits the curvature of the nonlinear region, and should not be set very small, to prevent gradient exploding.
-    >>3. $C=w-w ln\left(1+w/\epsilon\right)$
-    >>4. $w=10, \epsilon=2$ in the original paper
+        1. non-negative w sets the range of the nonlinear part to (-w, w).
+        2. $\epsilon$ limits the curvature of the nonlinear region, and should not be set very small, to prevent gradient exploding.
+        3. $C=w-w ln\left(1+w/\epsilon\right)$
+        4. $w=10, \epsilon=2$ in the original paper
 2. All loss functions perform well for large errors, so training of a neural network should pay more attention to the samples with small or medium range errors.
 ### 5. Pose-based data balancing
 1. Resampling on the training set, to make the distribution is uniform on the PCA subspace
