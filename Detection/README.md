@@ -15,7 +15,9 @@
 
 # Face Detection
 ## Paper
-1. [PyramidBox](PyramidBox.md)
+1. [PyramidBox: A context-assisted Single Shot Face Detector](PyramidBox-A-context-assisted-Single-Shot-Face-Detector.md)
+2. [Seeing Small Faces from Robust Anchor's Perspective](Seeing-Small-Faces-from-Robust-Anchor's-Perspective.md)
+3. [Face Attention Network: An Effective Face Detector for the Occluded Face](Face-Attention-Network-An-Effective-Face-Detector-for-the-Occluded-Face.md)
 
 ## Wider Face Result
 1. Performance curves for the validation set
