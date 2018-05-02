@@ -4,7 +4,7 @@
 2. [COCO]()
 ### 2. One Stage
 1. [SSD]()
-2. [YOLO]()
+2. [YOLO](YOLO.md)
 3. [RetinaNet]()
 ### 3. Two Stage
 1. [RCNN]()
@@ -16,7 +16,7 @@
 # Face Detection
 ## Paper
 1. [PyramidBox: A context-assisted Single Shot Face Detector](PyramidBox-A-context-assisted-Single-Shot-Face-Detector.md)
-2. [Seeing Small Faces from Robust Anchor's Perspective](Seeing-Small-Faces-from-Robust-Anchor's-Perspective.md)
+2. [Seeing Small Faces from Robust Anchor's Perspective](Seeing-Small-Faces-from-Robust-Anchors-Perspective.md)
 3. [Face Attention Network: An Effective Face Detector for the Occluded Face](Face-Attention-Network-An-Effective-Face-Detector-for-the-Occluded-Face.md)
 
 ## Wider Face Result
