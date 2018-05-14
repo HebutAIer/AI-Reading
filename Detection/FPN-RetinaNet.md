@@ -45,8 +45,7 @@
         top_down = 0.5 * top_down + 0.5 * residual 
         pyramid_layer = slim.conv2d(top_down, depth, (3, 3))
 
-        
-#Focal Loss for Dense Object Detection
+# Focal Loss for Dense Object Detection
 ## Abstract
 1. The accuracy of one-stage detectors is lower than two stage detectors, because the extreme foreground-background class imbalance encountered during training of one-stage detectors, 
 2. Class imbalance is addressed by reshaping the standard cross entropy loss such that it down-weights the loss assigned to well-classified esamples.
