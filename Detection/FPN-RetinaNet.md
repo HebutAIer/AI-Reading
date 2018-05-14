@@ -33,18 +33,17 @@
     1. ROIs of different scales is assign to the pyramid levels.
     2. An ROI of width w and heigh h is assigned to level $P_k$ of feature pyramid by $k=\lfloor k_0+log_2{(\sqrt{wh}/244)}\rfloor$, which means if the ROI's scale becomes smaller, it should be mapped into a finer-resolution level.
     3. The predictor heads is attached to all ROIs of all levels, and the heads all share parameters, regardless of their levels.
-## Implement Detail by tf
-1. image_features = self._resnet_base_fn(image_input)
-2. image_features = self._filter_features(image_features)
-3. image_features.append(conv(image_features[-1], (3,3)))
-4. image_features.append(conv(image_features[-1], (3,3))
-5. feature_maps = feature_map_generators.fpn_top_down_feature_maps(image_features, depth)
-    1. top_down = conv(image_features[i+1], (1,1), depth)
-    2. top_down = nearest_neighbor_upsampling(top_down, 2)
-    3. residual = convl(image_features[i], (1,2), depth)
-    4. top_down = 0.5 * top_down + 0.5 * residual 
-    5. pyramid_layer = slim.conv2d(top_down, depth, (3, 3))
-
+## Implement by tf
+    image_features = self._resnet_base_fn(image_input)
+    image_features = self._filter_features(image_features)
+    image_features.append(conv(image_features[-1], (3,3)))
+    image_features.append(conv(image_features[-1], (3,3))
+    feature_maps = feature_map_generators.fpn_top_down_feature_maps(image_features, depth)
+        top_down = conv(image_features[i+1], (1,1), depth)
+        top_down = nearest_neighbor_upsampling(top_down, 2)
+        residual = convl(image_features[i], (1,2), depth)
+        top_down = 0.5 * top_down + 0.5 * residual 
+        pyramid_layer = slim.conv2d(top_down, depth, (3, 3))
 #Focal Loss for Dense Object Detection
 ## Abstract
 1. The accuracy of one-stage detectors is lower than two stage detectors, because the extreme foreground-background class imbalance encountered during training of one-stage detectors, 
