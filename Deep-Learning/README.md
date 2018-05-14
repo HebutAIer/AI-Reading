@@ -2,7 +2,7 @@
 1. [Introduction](1-Introduction.md)
 ## Part I. Applied Math and Machine Learning Basics
 2. [Linear Algebra](2-Linear-Algebra.md)
-3. [Probability and Information Theory]()
+3. [Probability and Information Theory](3-Probability-and-Information-Theory.md)
 4. [Numerical Computation]()
 5. [Machine Learning Basics]()
 ## Part II. Deep Networks: Modern Practices
@@ -21,4 +21,4 @@
 17. [Monte Carlo Methods]()
 18. [Confronting the Partition Function]()
 19. [Approximate Inference]()
-20. [Deep Generative Models]()
+20. [Deep Generative Models]()v
