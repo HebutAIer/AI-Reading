@@ -44,6 +44,8 @@
         residual = convl(image_features[i], (1,2), depth)
         top_down = 0.5 * top_down + 0.5 * residual 
         pyramid_layer = slim.conv2d(top_down, depth, (3, 3))
+
+        
 #Focal Loss for Dense Object Detection
 ## Abstract
 1. The accuracy of one-stage detectors is lower than two stage detectors, because the extreme foreground-background class imbalance encountered during training of one-stage detectors, 
